@@ -2904,14 +2904,8 @@ template, [hidden] {
 
 
 .article__others-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 25px;
 }
@@ -2945,12 +2939,13 @@ template, [hidden] {
   max-width: 300px;
 }
 
-.article__others-title h3 {
+.article__others-title a {
   color: #149BDC;
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 25px;
   max-width: 250px;
+  cursor: pointer;
 }
 
 .article__others-title p {
