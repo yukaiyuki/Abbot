@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8"/>
+
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="icon" href="img/favicon/favicon.png"/>
+    <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/favicon/favicon.png"
+    />
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000"/>
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/style.min.css"/>
+</head>
+
+<body>
+
+<!-- header -->
+<header class="header">
+    <div class="container">
+
+        <div class="header__wrap">
+
+            <a href="#" class="logo">
+                <img src="img/logo-1.svg" alt="Abbott">
+                <img src="img/logo-2.svg" alt="Abbott">
+            </a>
+
+            <div class="header__items">
+                <div class="header__menu">
+                    <a href="#">
+                        РАЗДЕЛЫ
+                        <span class="header__items-hover"></span>
+                    </a>
+                </div>
+                <div class="header__content">
+                    <a href="">Кардиология</a>
+                    <a href="">Неврология и психиатрия</a>
+                    <a href="">Женское здоровье</a>
+                    <a href="">Гастроэнтерология</a>
+                </div>
+            </div>
+            <div class="header__items">
+                <div class="header__menu">
+                    <a href="#">
+                        МЕРОПРИЯТИЯ
+                        <span class="header__items-hover"></span>
+                    </a>
+                </div>
+                <div class="header__content">
+                    <a href="">Кардиология</a>
+                    <a href="">Неврология и психиатрия</a>
+                    <a href="">Женское здоровье</a>
+                    <a href="">Гастроэнтерология</a>
+                </div>
+            </div>
+            <div class="header__items">
+                <div class="header__menu">
+                    <a href="#">
+                        МАТЕРИАЛЫ
+                        <span class="header__items-hover"></span>
+                    </a>
+                </div>
+                <div class="header__content">
+                    <a href="">Кардиология</a>
+                    <a href="">Неврология и психиатрия</a>
+                    <a href="">Женское здоровье</a>
+                    <a href="">Гастроэнтерология</a>
+                </div>
+            </div>
+            <div class="header__items">
+                <div class="header__menu">
+                    <a href="#">
+                        НОВОСТИ
+                        <span class="header__items-hover"></span>
+                    </a>
+                </div>
+                <div class="header__content">
+                    <a href="">Кардиология</a>
+                    <a href="">Неврология и психиатрия</a>
+                    <a href="">Женское здоровье</a>
+                    <a href="">Гастроэнтерология</a>
+                </div>
+            </div>
+            <div class="header__items">
+                <div class="header__menu">
+                    <a href="#">
+                        О ПРОЕКТЕ
+                        <span class="header__items-hover"></span>
+                    </a>
+                </div>
+                <div class="header__content">
+                    <a href="">Кардиология</a>
+                    <a href="">Неврология и психиатрия</a>
+                    <a href="">Женское здоровье</a>
+                    <a href="">Гастроэнтерология</a>
+                </div>
+            </div>
+
+            <a class="btn__lk popup-with-form" href="#popup-form">Войти</a>
+
+            <a href="#" class="logo__end">
+                <img src="img/logo-3.svg" alt="Pro">
+            </a>
+
+            <div class="header__burger">
+                <img src="img/header-burger.svg" alt="">
+            </div>
+            <div class="header__close">
+                <img src="img/header-menu-close.svg" alt="">
+            </div>
+
+        </div>
+
+        <div class="header__btn-inner">
+            <a class="btn__lk popup-with-form header__btn" href="#popup-form">Войти</a>
+        </div>
+
+    </div>
+</header>
+<!-- header -->
+
+
+<!-- registration -->
+<section class="registration">
+    <div class="container">
+
+        <div class="registration__title">
+
+            <h1 class="section__title">
+                регистрация
+            </h1>
+
+        </div>
+
+    </div>
+</section>
+<!-- registration -->
+
+
+<!-- registration__information -->
+<section class="registration__information">
+    <div class="container">
+
+        <!-- information -->
+        <form id="information" class="information">
+
+            <!-- information__wrap -->
+            <div class="information__wrap">
+
+                <div class="information__title">
+                    Основная информация
+                </div>
+
+                <div class="information__findings information__basic">
+
+                    <label class="input__field">
+                        <input id="name" name="name" type="name" placeholder="Имя">
+                    </label>
+
+                    <label class="input__field">
+                        <input id="surname" name="surname" type="surname" placeholder="Фамилия">
+                    </label>
+
+                    <label class="input__field">
+                        <input id="middle-name" name="middle-name" type="middle-name" placeholder="Отчество">
+                    </label>
+
+                    <label class="input__field">
+                        <input id="data" type="text" placeholder="Дата рождения" onfocus="(this.type='date')"
+                               onblur="if(this.value==''){this.type='text'}">
+                    </label>
+
+                </div>
+
+            </div>
+            <!-- information__wrap -->
+
+            <!-- information__wrap -->
+            <div class="information__wrap">
+
+                <div class="information__title">
+                    Контактная информация
+                </div>
+
+                <div class="input__field-wrap-width">
+
+                    <div class="information__findings information__basic">
+
+
+                        <label class="input__field">
+                            <input id="email" name="email" type="email" placeholder="E-mail/Логин">
+                        </label>
+
+                        <label class="input__field">
+                            <input id="mobile-phone " name="mobile-phone" type="home-phone"
+                                   placeholder="Мобильный телефон">
+                        </label>
+
+
+                    </div>
+
+                    <div class="information__block">
+                        <label class="input__field-width">
+                            <input id="password" name="password" type="password" placeholder="Пароль">
+                        </label>
+
+                        <label class="input__field-width">
+                            <input id="confirm-password" name="confirm-password" type="password"
+                                   placeholder="Подтвердите пароль">
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- information__wrap -->
+
+            <!-- information__wrap -->
+            <div class="information__wrap">
+
+                <div class="information__title">
+                    Данные о работе <br> и должности
+                </div>
+
+                <div class="input__field-wrap-width">
+                    <label class="input__field-width">
+                        <input id="company-address" name="company-address" type="company-address"
+                               placeholder="Адрес компании">
+                    </label>
+
+                    <div class="information__findings information__basic">
+
+
+                        <select class="input__field select" name="work-adress" id="work-adress">
+                            <option value="">Выберите место работы</option>
+                            <option value="">2</option>
+                            <option value="">2</option>
+                        </select>
+
+                        <label class="input__field">
+                            <input id="work-phone " name="work-phone" type="work-phone" placeholder="Рабочий телефон">
+                        </label>
+
+                        <label class="input__field">
+                            <input id="work-adress" name="work-adress" type="work-adress"
+                                   placeholder="Место работы если нет в списке">
+                        </label>
+
+
+                        <select class="input__field select" name="current-position" id="current-position">
+                            <option value="">Занимаемая должность</option>
+                            <option value="">2</option>
+                            <option value="">2</option>
+                        </select>
+
+
+                        <select class="input__field select" name="specialization" id="specialization">
+                            <option value="">Специальность</option>
+                            <option value="">2</option>
+                            <option value="">2</option>
+                        </select>
+
+                        <label class="input__field">
+                            <input id="specialization" name="specialization" type="specialization"
+                                   placeholder="ВУЗ ">
+                        </label>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- information__wrap -->
+
+            <!-- information__wrap -->
+            <div class="information__wrap">
+
+                <div class="information__title">
+                    Домашний адрес
+                </div>
+
+                <div class="input__field-wrap-width">
+                    <label class="input__field-width">
+                        <input id="address" name="address" type="address" placeholder="Улица, дом, квартира">
+                    </label>
+
+                    <div class="information__findings information__basic">
+
+
+                        <label class="input__field">
+                            <input id="index" name="index" type="index" placeholder="Индекс">
+                        </label>
+
+                        <label class="input__field">
+                            <input id="home-phone " name="home-phone" type="home-phone" placeholder="Домашний телефон">
+                        </label>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- information__wrap -->
+
+            <!-- information__wrap -->
+            <div class="information__wrap">
+
+                <div class="information__title">
+                    Откуда Вы узнали о сайте?
+                </div>
+
+                <div class="input__field-wrap-width">
+
+                    <select class="input__field select information__block" name="specialization" id="specialization">
+                        <option value="">Случайно</option>
+                        <option value="">2</option>
+                        <option value="">2</option>
+                    </select>
+
+
+                </div>
+
+            </div>
+            <!-- information__wrap -->
+
+
+            <div class="information__bot">
+
+
+                <div class="information__code-checkbox">
+
+                    <div class="information__code-checkbox-item">
+
+                        <input type="checkbox" class="information-checkbox" id="checkbox" name="checkbox" value="yes"
+                               checked="checked">
+                        <label for="checkbox">
+                            Я подтверждаю свое согласие на обработку персональных данных ООО «Эбботт
+                            Лэбораториз» в соответствии с соглашением на использование персональных данных, с которым я
+                            ознакомился
+                        </label>
+
+                    </div>
+
+                    <div class="information__code-checkbox-item">
+
+                        <input type="checkbox" class="information-checkbox" id="information-website"
+                               name="information-website" value="yes" checked="checked">
+                        <label for="information-website">
+                            Я соглашаюсь с официальным уведомлением
+                        </label>
+
+                    </div>
+
+                    <div class="information__code-checkbox-item">
+
+                        <input type="checkbox" class="information-checkbox" id="information-website-two"
+                               name="information-website-two" value="yes" checked="checked">
+                        <label for="information-website-two">
+                            Я согласен на получение рекламных и информационных сообщений от ООО «Эбботт Лэбораториз»
+                            посредством использования телефонной и голосовой связи, электронной почты, SMS и
+                            мессенджеров
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="btn__further-wrap">
+
+                    <div  class="btn__further">
+                        зарегистрироваться
+                    </div>
+                    <div class="btn__further-modal">
+                        <div class="btn__modal-content">
+                            <div class="btn__modal-title">
+                                Спасибо!
+                            </div>
+                            <div class="btn__modal-text">
+                                Мы отправили на почту указанную при регистрации письмо для подтверждения аккаунта,
+                                пожалуйста перейдите по ссылке и активируйте аккаунт
+                            </div>
+                            <div class="btn__modal-close">
+                                <span>НА ГЛАВНУЮ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </form>
+        <!-- information -->
+
+
+    </div>
+</section>
+<!-- registration__information -->
+
+
+<section class="law">
+
+    <div class="container">
+        <p>
+            В соответствии со статьей 9 Федерального закона от 27 июля 2006 года N° 152-ФЗ «О персональных данных»
+            предоставляю своей волей и в своем интересесогласие ООО «Эбботт Лэбораториз», расположенному по адресу:
+            125171, Москва, Ленинградское шоссе, д.16А, строение 1, на обработку моих персональных данных, указанных в
+            настоящей анкете с использованием средств автоматизации или без использования таких средств в целях участия
+            в информационно-образовательных мероприятиях и (или) программах, проводимых ООО «Эбботт Лэбораториз» или
+            уполномоченным ООО «Эбботт Лэбораториз» лицом с использованием сайтов в Информационно-телекоммуникационной
+            сети Интернет и (или) мобильных приложений, а также получения по телефону, почте и (или) электронной почте
+            приглашений на участия в информационно-образовательных мероприятиях и (или) программах, информации
+            образовательного характера, новостных и аналитических материалов о событиях и фактах, происходящих в ООО
+            «Эбботт Лэбораториз» и (или) в сфере здравоохранения, своевременного информирования Заявителя о показателях
+            качества, эффективности и безопасности лекарственных средств, медицинских изделий и продуктов питания
+            производства группы компаний Abbott (далее «Abbott»), а также для целей предоставления Заявителю иной
+            информации о лекарственных средствах, медицинских изделиях и продуктах питания производства Abbott, в том
+            числе информации рекламного характера, а также на трансграничную передачу персональных данных на территорию
+            Великобритании.
+
+        </p>
+
+        <p>
+            Перечень действий с персональными данными: сбор, запись, систематизация, накопление, комбинирование,
+            хранение, уничтожение, извлечение, изменение, уточнение, извлечение передача третьим лицам в ООО "Проксима
+            Рисерч" (123610, г. Москва, Краснопресненская наб., д.12, офисное здание 1, подъезд №3, офис 506а), а также
+            ООО «Юник» (129085, г. Москва, Звёздный бульвар, д.21, стр.1, эт.3, пом.I, оф.315), ООО «Вебинар Технологии»
+            (127055 Москва, Приютский пер., д. 3, стр. 1), ООО «Н-ТЕХ» (197101, г. Санкт-Петербург, ул. Большая
+            Монетная, д. 26, лит. А, пом. 25), ООО «Визевен» (125047, г. Москва, 4-ый переулок, д.4 БЦ «Лесная Плаза»
+            оф. 490), а также трансграничная передача персональных данных на территорию Великобритании.
+        </p>
+
+        <p>
+            Принятие решений, затрагивающих интересы владельца персональных данных, на основании исключительно
+            автоматизированной обработки персональных данных ООО «Эбботт Лэбораториз» не производит.
+        </p>
+
+        <p>
+            Настоящее согласие действует со дня его подписания в течение двадцати лет либо до даты достижения цели
+            обработки персональных данных, либо до дня отзыва в письменной форме.
+        </p>
+
+        <p>
+            Настоящее согласие может быть отозвано субъектом персональных данных в электронном виде путем прохождения по
+            ссылке для отписки от рассылки в полученной рассылке или путем направления на юридический адрес ООО «Эбботт
+            Лэбораториз» сообщения об отзыве согласия на обработку ПДн в письменной форме на бумажном носителе.
+            Ознакомьтесь с соглашением на использование персональных данных компанией Abbott, нажав на эту ссылку
+            Ознакомьтесь с официальным уведомлением, нажав на эту ссылку
+        </p>
+
+        <p class="law__link">
+            Ознакомьтесь с соглашением на использование персональных данных компанией Abbott, нажав на эту <a href="#">ссылку</a>
+        </p>
+
+        <p class="law__link">
+            <a href="#">Ознакомьтесь с официальным уведомлением, нажав на эту ссылку</a>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__wrap">
+
+            <div class="footer__item">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo__footer.svg" alt="Abbott">
+                </a>
+
+
+                <span class="footer__info-title">
+                <span class="num">18+</span>
+                <span class="footer__info">
+                  Информация, представленная на сайте, предназначена для просмотра только совершеннолетними лицами.
+                </span>
+            </span>
+            </div>
+
+            <div class="footer__title">
+
+                <div class="footer__navigation">
+                    <ul>
+                        <li><a href="#">О портале</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="#" style="font-weight: 700;">ABBOTT GLOBAL</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">О нас </a></li>
+                        <li><a href="#">Политика конфиденциальности </a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Условия онлайн использования</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__description">
+
+                    <p>
+                        RUS2143803 от 09.09.2020.
+                    </p>
+
+                    <p>
+                        Материал разработан при поддержке компании ООО "Эбботт Лэбораториз" в целях повышения
+                        осведомлённости пациентов о состоянии здоровья. Информация в материале не заменяет консультации
+                        специалиста здравоохранения. Обратитесь к лечащему врачу.
+                    </p>
+
+                    <p>
+                        При использовании интернет-ресурса https://______.ru в порядке ст. 9 Федерального закона от
+                        27.07.2006 N 152-ФЗ «О персональных данных» (далее – ФЗ «О персональных данных») пользователь
+                        сайта https://______.ru даёт согласие ООО "Эбботт Лэбораториз" на автоматизированную обработку в
+                        т.ч., но, не ограничиваясь на передачу в сторонние сервисы анализа посетителей Yandex.Metrika;
+                        Yandex Webmaster; GoogleAnalytics; Google Tag Manager обработку данных о посетителе (а именно,
+                        cookies, IP-адрес, URL страницы, заголовок и реферер страницы, предполагаемое географическое
+                        положение, часовой пояс, возраст, пол, версия и язык браузера, разрешение дисплея, версия
+                        операционной системы и вспомогательного программного обеспечения, учет взаимодействия с сайтом,
+                        модель устройства, поисковые системы, глубину просмотра, список скачанных файлов, интересы
+                        посетителя, список посещённых страниц и проведённое время на сайте).
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <span class="footer__info-medical">
+          Информация предназначена для медицинских и фармацевтических работников
+        </span>
+
+    </div>
+</footer>
+<!-- footer -->
+
+
+<!--<a class="btn__lk popup-with-form" href="#popup-thanks">Войти</a>-->
+
+
+<!-- form itself -->
+<div class="hidden">
+
+    <form id="popup-form" class="white-popup-block mfp-hide popup__wrap">
+
+        <div class="popup__wrap-content">
+
+            <span class="popup__wrap-title">Вход</span>
+
+            <label>
+                <input id="email" name="email" type="email" placeholder="Email" required="">
+            </label>
+
+            <div class="password">
+                <label>
+                    <input type="password" id="password-input" placeholder="Пароль" name="password" required="">
+                    <a href="#" class="password-control"></a>
+                </label>
+            </div>
+
+
+            <div class="code__checkbox">
+
+                <div>
+                    <input type="checkbox" class="custom-checkbox" id="checkbox" name="checkbox" value="yes">
+                    <label for="checkbox">Запомнить пароль</label>
+                </div>
+
+                <a href="#">Забыли пароль?</a>
+            </div>
+
+
+            <button type="submit" value="SUBMIT" class="btn btn-submit">
+                Войти
+            </button>
+
+
+            <div class="popup__wrap-bot">У вас ещё нет аккаунта?
+                <a href="#"> Зарегистрироваться</a>
+            </div>
+
+        </div>
+
+
+    </form>
+
+    <form id="popup-thanks" class="white-popup-block mfp-hide popup__wrap">
+
+        <div class="popup__wrap-thanks">
+
+            <div class="thanks__img">
+                <img src="img/thanks.svg" alt="">
+            </div>
+
+            <span class="thanks__title">Спасибо за регистрацию!</span>
+
+            <p class="thanks__text">Мы отправили вам на почту письмо для подтверждения email от портала Abbott PRO.</p>
+
+            <span class="thanks__bot">Пожалуйста, нажмите на ссылку в письме для завершения регистрации и доступа к материалам сайта.</span>
+
+        </div>
+
+
+    </form>
+
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

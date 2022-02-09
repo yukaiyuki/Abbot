@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg" />
+    <link rel="icon" href="img/favicon/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon.png" />
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000" />
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+
+            <div class="header__wrap">
+
+                <a href="#" class="logo">
+                    <img src="img/logo-1.svg" alt="Abbott">
+                    <img src="img/logo-2.svg" alt="Abbott">
+                </a>
+
+                <div class="header__items">
+                    <div class="header__menu">
+                        <a href="#">
+                            РАЗДЕЛЫ
+                            <span class="header__items-hover"></span>
+                        </a>
+                    </div>
+                    <div class="header__content">
+                        <a href="">Кардиология</a>
+                        <a href="">Неврология и психиатрия</a>
+                        <a href="">Женское здоровье</a>
+                        <a href="">Гастроэнтерология</a>
+                    </div>
+                </div>
+                <div class="header__items">
+                    <div class="header__menu">
+                        <a href="#">
+                            МЕРОПРИЯТИЯ
+                            <span class="header__items-hover"></span>
+                        </a>
+                    </div>
+                    <div class="header__content">
+                        <a href="">Кардиология</a>
+                        <a href="">Неврология и психиатрия</a>
+                        <a href="">Женское здоровье</a>
+                        <a href="">Гастроэнтерология</a>
+                    </div>
+                </div>
+                <div class="header__items">
+                    <div class="header__menu">
+                        <a href="#">
+                            МАТЕРИАЛЫ
+                            <span class="header__items-hover"></span>
+                        </a>
+                    </div>
+                    <div class="header__content">
+                        <a href="">Кардиология</a>
+                        <a href="">Неврология и психиатрия</a>
+                        <a href="">Женское здоровье</a>
+                        <a href="">Гастроэнтерология</a>
+                    </div>
+                </div>
+                <div class="header__items">
+                    <div class="header__menu">
+                        <a href="#">
+                            НОВОСТИ
+                            <span class="header__items-hover"></span>
+                        </a>
+                    </div>
+                    <div class="header__content">
+                        <a href="">Кардиология</a>
+                        <a href="">Неврология и психиатрия</a>
+                        <a href="">Женское здоровье</a>
+                        <a href="">Гастроэнтерология</a>
+                    </div>
+                </div>
+                <div class="header__items">
+                    <div class="header__menu">
+                        <a href="#">
+                            О ПРОЕКТЕ
+                            <span class="header__items-hover"></span>
+                        </a>
+                    </div>
+                    <div class="header__content">
+                        <a href="">Кардиология</a>
+                        <a href="">Неврология и психиатрия</a>
+                        <a href="">Женское здоровье</a>
+                        <a href="">Гастроэнтерология</a>
+                    </div>
+                </div>
+
+                <a class="btn__lk popup-with-form" href="#popup-form">Войти</a>
+
+                <a href="#" class="logo__end">
+                    <img src="img/logo-3.svg" alt="Pro">
+                </a>
+
+                <div class="header__burger">
+                    <img src="img/header-burger.svg" alt="">
+                </div>
+                <div class="header__close">
+                    <img src="img/header-menu-close.svg" alt="">
+                </div>
+
+            </div>
+            <div class="header__btn-inner">
+                <a class="btn__lk popup-with-form header__btn" href="#popup-form">Войти</a>
+            </div>
+
+        </div>
+    </header>
+    <!-- header -->
+
+
+    <!-- event -->
+    <section class="event">
+        <div class="second__container">
+
+            <h2 class="event__title">Календарь мероприятий</h2>
+
+            <ul class="webinar__themes">
+                <li>
+                    <a href="#" class="btn__theme webinar__theme">Неврология</a>
+                </li>
+
+                <li>
+                    <a href="#" class="btn__theme webinar__theme active__theme">Кардиология</a>
+                </li>
+
+                <li>
+                    <a href="#" class="btn__theme webinar__theme">Женское здоровье</a>
+                </li>
+
+                <li>
+                    <a href="#" class="btn__theme webinar__theme">Гастроэнтерология</a>
+                </li>
+
+            </ul>
+
+            <!--calendar-->
+            <section class="calendar">
+                <div class="container">
+                    <div class="calendar__title">МЕРОПРИЯТИЯ</div>
+
+                    <div class="calendar-wrapper">
+
+                        <div class="calendar-toolbar">
+                            <select class="calendar-toolbar-year calendar-toolbar-date"
+                                id="calendarYearSelect"></select>
+                            <select class="calendar-toolbar-month calendar-toolbar-date"
+                                id="calendarMonthSelect"></select>
+                            <div class="calendar-toolbar-inner">
+
+                                <div onclick="activeSwitch()" class="switcher">
+                                    <div class="switcher-option switcher-option-one active">
+                                        <span>Месяц</span>
+                                    </div>
+                                    <div class="switcher-option switcher-option-two">
+                                        <span>Год</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id='calendar'></div>
+
+                    </div>
+
+                </div>
+                <div class="calendar__popup">
+                    <div class="calendar__popup-inner">
+                        <div class="calendar__popup-title">
+                            ХХХ Конференция врачей и фармацевтов России
+                        </div>
+                        <div class="calendar__popup-text">
+                            <p>Суббота, 04 марта 2021 г. <br> с 12:00 по 12:25 (45 минут)</p>
+                            <span>
+                                Не позволяйте внешним обстоятельствам определять
+                            Ваше самоощущение. Невозможно контролировать внешние обстоятельства, но возможно влиять на то, какое
+                            значение Вы им придаете. Масштаб человека измеряется масштабом проблем, которые могут на него влиять.
+                            </span>
+                        </div>
+                        <div class="calendar__popup-btn">
+                            <a class="calendar__popup-btn-one" href="#">Зарегистрироваться</a>
+                            <a class="calendar__popup-btn-two">В избранном</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--calendar-->
+
+
+            <h2 class="event__title-two">ЗАПИСИ ВЕБИНАРОВ</h2>
+
+            <ul class="webinar__themes">
+                <li>
+                    <a href="#" class="btn__theme webinar__theme">Неврология</a>
+                </li>
+
+                <li>
+                    <a href="#" class="btn__theme webinar__theme active__theme">Кардиология</a>
+                </li>
+
+                <li>
+                    <a href="#" class="btn__theme webinar__theme">Женское здоровье</a>
+                </li>
+
+                <li>
+                    <a href="#" class="btn__theme webinar__theme">Гастроэнтерология</a>
+                </li>
+
+            </ul>
+
+            <!-- webinar__wrap -->
+            <div class="webinar__wrap webinar__wrap-more">
+
+                <!-- webinar__item -->
+                <div class="webinar__item webinar__item-more">
+
+                    <div class="webinar__video" style="background-image: url(img/webinar-bg.png);">
+
+                        <a class="webinar-video__btn" data-fancybox href="https://youtu.be/McSTvIqDuso">
+                            <img src="img/play.svg" />
+                        </a>
+
+                    </div>
+
+                    <div class="webinar__title">
+
+                        <p>
+                            «Гестагены при беременности высокого риска: что нового в 2021 году?»
+                        </p>
+                        <span class="webinar__text">Лектор: Фади Мирза</span>
+                    </div>
+
+                </div>
+                <!-- webinar__item -->
+
+                <!-- webinar__item -->
+                <div class="webinar__item webinar__item-more">
+
+                    <div class="webinar__video" style="background-image: url(img/webinar-bg.png);">
+
+                        <a class="webinar-video__btn" data-fancybox href="https://youtu.be/McSTvIqDuso">
+                            <img src="img/play.svg" />
+                        </a>
+
+                    </div>
+
+                    <div class="webinar__title">
+
+                        <p>
+                            «Гестагены при беременности высокого риска: что нового в 2021 году?»
+                        </p>
+                        <span class="webinar__text">Лектор: Фади Мирза</span>
+                    </div>
+
+                </div>
+                <!-- webinar__item -->
+
+                <!-- webinar__item -->
+                <div class="webinar__item webinar__item-more">
+
+                    <div class="webinar__video" style="background-image: url(img/webinar-bg.png);">
+
+                        <a class="webinar-video__btn" data-fancybox href="https://youtu.be/McSTvIqDuso">
+                            <img src="img/play.svg" />
+                        </a>
+
+                    </div>
+
+                    <div class="webinar__title">
+
+                        <p>
+                            «Гестагены при беременности высокого риска: что нового в 2021 году?»
+                        </p>
+                        <span class="webinar__text">Лектор: Фади Мирза</span>
+                    </div>
+
+                </div>
+                <!-- webinar__item -->
+
+                <!-- webinar__item -->
+                <div class="webinar__item webinar__item-more">
+
+                    <div class="webinar__video" style="background-image: url(img/webinar-bg.png);">
+
+                        <a class="webinar-video__btn" data-fancybox href="https://youtu.be/McSTvIqDuso">
+                            <img src="img/play.svg" />
+                        </a>
+
+                    </div>
+
+                    <div class="webinar__title">
+
+                        <p>
+                            «Гестагены при беременности высокого риска: что нового в 2021 году?»
+                        </p>
+                        <span class="webinar__text">Лектор: Фади Мирза</span>
+                    </div>
+
+                </div>
+                <!-- webinar__item -->
+
+
+            </div>
+            <!-- webinar__wrap -->
+
+            <div class="webinar-btn__wrap">
+                <a href="#" class="btn__all">Смотреть все</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- webinar -->
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__wrap">
+
+                <div class="footer__item">
+                    <a href="#" class="footer__logo">
+                        <img src="img/logo__footer.svg" alt="Abbott">
+                    </a>
+
+
+                    <span class="footer__info-title">
+                        <span class="num">18+</span>
+                        <span class="footer__info">
+                            Информация, представленная на сайте, предназначена для просмотра только совершеннолетними
+                            лицами.
+                        </span>
+                    </span>
+                </div>
+
+                <div class="footer__title">
+
+                    <div class="footer__navigation">
+                        <ul>
+                            <li><a href="#">О портале</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <a href="#" style="font-weight: 700;">ABBOTT GLOBAL</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">О нас </a></li>
+                            <li><a href="#">Политика конфиденциальности </a></li>
+                            <li><a href="#">Обратная связь</a></li>
+                            <li><a href="#">Условия онлайн использования</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__description">
+
+                        <p>
+                            RUS2143803 от 09.09.2020.
+                        </p>
+
+                        <p>
+                            Материал разработан при поддержке компании ООО "Эбботт Лэбораториз" в целях повышения
+                            осведомлённости
+                            пациентов о состоянии здоровья. Информация в материале не заменяет консультации специалиста
+                            здравоохранения. Обратитесь к лечащему врачу.
+                        </p>
+
+                        <p>
+                            При использовании интернет-ресурса https://______.ru в порядке ст. 9 Федерального закона от
+                            27.07.2006 N
+                            152-ФЗ «О персональных данных» (далее – ФЗ «О персональных данных») пользователь сайта
+                            https://______.ru
+                            даёт согласие ООО "Эбботт Лэбораториз" на автоматизированную обработку в т.ч., но, не
+                            ограничиваясь на
+                            передачу в сторонние сервисы анализа посетителей Yandex.Metrika; Yandex Webmaster;
+                            GoogleAnalytics; Google
+                            Tag Manager обработку данных о посетителе (а именно, cookies, IP-адрес, URL страницы,
+                            заголовок
+                            и реферер
+                            страницы, предполагаемое географическое положение, часовой пояс, возраст, пол, версия и язык
+                            браузера,
+                            разрешение дисплея, версия операционной системы и вспомогательного программного обеспечения,
+                            учет
+                            взаимодействия с сайтом, модель устройства, поисковые системы, глубину просмотра, список
+                            скачанных файлов,
+                            интересы посетителя, список посещённых страниц и проведённое время на сайте).
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <span class="footer__info-medical">
+                Информация предназначена для медицинских и фармацевтических работников
+            </span>
+
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <!-- form itself -->
+    <div class="hidden">
+
+        <form id="popup-form" class="white-popup-block mfp-hide popup__wrap">
+
+            <div class="popup__wrap-content">
+
+                <span class="popup__wrap-title">Вход</span>
+
+                <label>
+                    <input id="email" name="email" type="email" placeholder="Email" required="">
+                </label>
+
+                <div class="password">
+                    <label>
+                        <input type="password" id="password-input" placeholder="Пароль" name="password" required="">
+                        <a href="#" class="password-control"></a>
+                    </label>
+                </div>
+
+
+                <div class="code__checkbox">
+
+                    <div>
+                        <input type="checkbox" class="custom-checkbox" id="checkbox" name="checkbox" value="yes">
+                        <label for="checkbox">Запомнить пароль</label>
+                    </div>
+
+                    <a href="#">Забыли пароль?</a>
+                </div>
+
+
+                <button type="submit" value="SUBMIT" class="btn btn-submit">
+                    Войти
+                </button>
+
+
+                <div class="popup__wrap-bot">У вас ещё нет аккаунта?
+                    <a href="#"> Зарегистрироваться</a>
+                </div>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+    <script src="js/fullcalendar.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
